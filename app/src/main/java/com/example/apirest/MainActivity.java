@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<List<Persona>> call, Response<List<Persona>> response) {
                 if(response.isSuccessful()) {
                     listPersona = response.body();
+                    Log.d("hfh","ghfhh");
                     listView.setAdapter(new PersonaAdapter(MainActivity.this,R.layout.content_main,listPersona));
                 }
             }
@@ -65,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -86,5 +87,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }

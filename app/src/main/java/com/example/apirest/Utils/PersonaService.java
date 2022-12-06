@@ -11,9 +11,9 @@ import retrofit2.http.POST;
 import retrofit2.http.Path;
 
 public interface PersonaService {
-    @Headers({"application-type: application/json",
-    "Content-Type: application/json"})
-    @GET("random")
+   /* @Headers({"application-type: application/json",
+    "Content-Type: application/json"})*/
+    @GET("episode/10,28")
     Call<List<Persona>> getPersonas();
 
 

@@ -37,8 +37,8 @@ public class PersonaAdapter extends ArrayAdapter<Persona> {
         TextView txtApellidos=(TextView)rowView.findViewById(R.id.Apellidos);
 
 
-        txtApellidos.setText(String.format("APPLIED: %s",personas.get(position).getMessage().get(0)));
-        Log.d("Error:",personas.get(position).getStatus());
+        txtApellidos.setText(String.format("APPLIED: %s",personas.get(position).getName()));
+
 
 
         return rowView;
